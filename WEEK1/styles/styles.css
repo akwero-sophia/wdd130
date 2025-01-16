@@ -1,40 +1,60 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 /* Add styles for the main element */
 main {
     width: 80%;
-    margin: 0 auto; /* Center the content horizontally */
+    margin: 0 auto;
+    max-width: 1200px; /* Added max-width */
+}
+
+/* Nav and Anchor Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
 }
 
 /* Add styles for the aside element */
 aside {
-    width: 400px;  /* Set width of aside */
-    margin: 20px;   /* Add margin around the aside */
-    border: 2px solid #333;  /* Add a border */
-    padding: 15px;  /* Add padding inside the aside */
-    background-color: #f4f4f4;  /* Background color */
-    color: #333;  /* Text color */
+    width: 400px;
+    margin: 20px;
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Image inside the aside */
 aside img {
-    width: 200px;  /* Image width */
-    height: auto;  /* Maintain aspect ratio */
+    width: 200px;
+    height: auto;
 }
 
-/* Make the img inside the main section more exclusive */
+/* Image inside the main section */
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
 /* Set padding for the paragraphs */
 p {
-    padding: 0;  /* No padding */
+    padding: 0;
 }
 
 /* Styling for footer */
 footer {
-    margin-top: 25px;  /* Add top margin */
-    border-top: 2px solid #333;  /* Add top border */
-    text-align: center;  /* Center the text */
-    padding: 10px 0;  /* Padding above and below the footer content */
+    margin-top: 25px;
+    border-top: 2px solid #333;
+    text-align: center;
+    padding: 10px 0;
 }
