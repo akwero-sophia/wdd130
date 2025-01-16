@@ -1,60 +1,135 @@
-/* General Styles */
-body {
-    font-family: 'Roboto Condensed', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Add styles for the main element */
-main {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px; /* Added max-width */
+body{
+    font-size: 16px;
+    font-family: Roboto, Arial,sans-serif;
 }
 
-/* Nav and Anchor Styles */
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
+nav{
+    background-color: darkblue;
     padding: 10px;
+
 }
 
-nav a {
+nav a{
     color: white;
+    display: block;
+    padding: 20px;
+}
+
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav{
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; 
+}
+
+h1{
+    color: darkblue;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+p{
     padding: 10px;
 }
 
-/* Add styles for the aside element */
-aside {
-    width: 400px;
-    margin: 20px;
-    border: 2px solid #333;
-    padding: 15px;
-    background-color: #f4f4f4;
-    color: #333;
+main{
+    max-width: 840px;
 }
 
-/* Image inside the aside */
+aside{
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0/0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* Image inside the main section */
-main img {
-    width: 200px;
+main img{
+    width: 150px;
     height: auto;
+    float: right;
+    margin:0 0 1rem 1rem ;
 }
 
-/* Set padding for the paragraphs */
-p {
+p{
+    margin: 1rem;
     padding: 0;
 }
 
-/* Styling for footer */
-footer {
-    margin-top: 25px;
-    border-top: 2px solid #333;
+aside h2{
+    position: absolute;
+    top: 37px;
+    left: 130px;
+}
+
+.grip{
+    display: grip;
+    margin: 1rem;
+}
+
+main{
+    grid-column:2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+footer{
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
-    padding: 10px 0;
+}
+
+header, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* Class Selector */
+.box{
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+     
+}
+
+.indent{
+    padding-left: 2rem;
 }
