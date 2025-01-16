@@ -1,0 +1,40 @@
+/* Add styles for the main element */
+main {
+    width: 80%;
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Add styles for the aside element */
+aside {
+    width: 400px;  /* Set width of aside */
+    margin: 20px;   /* Add margin around the aside */
+    border: 2px solid #333;  /* Add a border */
+    padding: 15px;  /* Add padding inside the aside */
+    background-color: #f4f4f4;  /* Background color */
+    color: #333;  /* Text color */
+}
+
+/* Image inside the aside */
+aside img {
+    width: 200px;  /* Image width */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+/* Make the img inside the main section more exclusive */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Set padding for the paragraphs */
+p {
+    padding: 0;  /* No padding */
+}
+
+/* Styling for footer */
+footer {
+    margin-top: 25px;  /* Add top margin */
+    border-top: 2px solid #333;  /* Add top border */
+    text-align: center;  /* Center the text */
+    padding: 10px 0;  /* Padding above and below the footer content */
+}
