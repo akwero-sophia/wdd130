@@ -1,36 +1,3 @@
-:root {
-  --primary-color: #023e8a;
-  --secondary-color: #0077b6;
-  --accent1-color: #caf0f8;
-  --accent2-color: #90e0ef;
-  --heading-font: 'Arial', 'Helvetica', sans-serif;
-  --paragraph-font: 'Roboto', sans-serif;
-  --nav-background-color: var(--accent1-color);
-  --nav-link-color: var(--primary-color);
-  --nav-hover-link-color: var(--secondary-color);
-  --nav-hover-background-color: var(--accent2-color);
-}
-
-body {
-  font-family: var(--paragraph-font);
-  max-width: 100%;
-  padding: 20px;
-  margin: 0 auto;
-  justify-content: center;
-  background-color: #f0f0f0; /* Lightened background to improve overall contrast */
-  position: relative;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--primary-color); /* Darker text for better contrast */
-  text-align: center;
-} 
-
-p {
-  font-size: 18px;
-}
-
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -162,4 +129,4 @@ main {
   animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
+ 
