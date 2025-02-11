@@ -1,121 +1,490 @@
-header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 2px;
-  background-color: var(--accent1-color);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  transition: opacity 0.3s ease;
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@300&display=swap");
+
+
+
+:root {
+    --primary-color: #1B065E;
+    --secondary-color: #4361ee;
+
+    --heading-font: 'Roboto';
+    --paragragh-font: 'Mooli' ;
 }
 
-header.scrolled {
-  opacity: 0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header.visible {
-  opacity: 1;
+/* home page design */
+
+header, main, footer {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-header img {
-  width: 150px;
-  height: auto;
+h1 {
+    font-family: var(--heading-font);
+    color: #fffaff;
+    text-align: center;
+    background-color: var(--primary-color);
+    opacity: .7;
 }
 
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    
+}
+
+/*Styles for header */
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.header img{
+    border-radius: 50%;
+    
+}
+
+.header nav a {
+    color: black;
+    margin: 0 15px;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
 nav {
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--nav-background-color);
-  font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-nav a {
-  display: block;
-  color: rgb(2, 2, 49); /* Unchanged */
-  text-decoration: none;
-  padding: 1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 10px;
-  margin: 0 6px;
+header, img, nav {
+    background-color: #C2F970;
+
 }
 
-nav a:link, nav a:visited {
-  color: var(--nav-link-color); /* Unchanged */
+.a{
+    text-align: center;
 }
 
-nav a:hover {
-  color: var(--nav-hover-link-color); /* Unchanged */
-  background-color: var(--nav-hover-background-color); /* Darker hover color */
-}
 
-.hero1 {
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #90e0ef;
-  background-image: url(../images/hero-image.png); /* Image for .hero for the about page.*/
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  min-height: 400px;
-  background-attachment: fixed;
-}
-.hero4 {
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #90e0ef;
-  background-image: url(../images/trips-hero.webp); /* Different image for .hero1 for the trips page*/
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  min-height: 400px;
-  background-attachment: fixed;
-}
+/* Hero section styles */
 .hero {
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #90e0ef;
-  background-image: url(../images/hero-image.png);
-  background-image: url(../images/rafting-home.jpg); /* Different image for .hero2 for the home page*/
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  min-height: 400px;
-  background-attachment: fixed;
+    position: relative;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-.hero1 {
-  border-radius: 10px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #90e0ef;
-  background-image: url(../images/rafting-home.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  min-height: 400px;
-  background-attachment: fixed;
-}
-.float-item {
-  width: 50px;
-  animation: float 5s ease-in-out infinite;
-  width: 500px;
-  animation: float 3s ease-in-out infinite;
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
- 
+.hero article {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    margin: 10px;
+    border: 1px;
+    padding: 10px;
+    background-color: white;
+    opacity: .7;
+}
+
+.hero article p {
+    font-size: large;
+    font-weight: bolder;
+}
+.hero h1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 2em;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    float: right;
+    
+}
+
+.hero article{
+    top:30%;
+    height:36%;
+}
+
+.hero h1{
+    text-align: center;
+    width: 95%;
+}
+
+/* address on contact page */
+.contact-us h1 {
+    color: black;
+    background-color: lightblue;
+}
+address {
+    font-family: var(--paragragh-font);
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+}
+
+/* styles for the map container */
+.map {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.employee-profiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.employee-profiles img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-profiles p {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Styles for the History and Adventure sections */
+h2.a {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+.adventure {
+    text-align: center;
+}
+
+.adventure img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 10px;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #C2F970;
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+
+/* Styles for the form on contact page */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: lightblue;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+   
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #C2F970;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+main {
+    background-color: azure;
+}
+
+/* Style for call for action*/
+.cta-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.cta-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.cta-section p {
+    font-size: 1.2em;
+}
+
+.cta-section a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cta-section a:hover {
+    color: blueviolet;
+}
+
+/* Styles for the Trips sections */
+.trip {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.trip-info {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.trip-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.trip-info p {
+    font-size: 1.2em;
+}
+
+.trip-image {
+    margin-top: 20px;
+}
+
+.trip-image img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: lightblue;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+}
+
+
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styles for newsletter section */
+.newsletter {
+    background-color: #fffaff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.newsletter input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #555;
+}
+
+/* Styles for the call-to-action section */
+.call-to-action {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.call-to-action h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.call-to-action p {
+    font-size: 1.2em;
+    border-bottom: 20px;
+}
+
+.call-to-action a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.call-to-action a:hover {
+    color: aqua;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: darkgreen;
+}
+
+/* Styles for grid-layout section */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.grid-items {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.grid-items img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.grid-items h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.grid-items p {
+    font-size: 1.2em;
+}
