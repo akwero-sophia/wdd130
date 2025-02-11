@@ -96,11 +96,6 @@ nav a:hover {
   background-attachment: fixed;
 }
 
-.hero img,
-@@ -158,21 +191,7 @@
-  z-index: 0;
-}
-
 .hero1 {
   border-radius: 10px;
   position: relative;
@@ -116,12 +111,6 @@ nav a:hover {
   min-height: 400px;
   background-attachment: fixed;
 }
-
-main {
-  padding: 20px;
-@@ -510,8 +529,8 @@
-}
-
 .float-item {
   width: 50px;
   animation: float 5s ease-in-out infinite;
