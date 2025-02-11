@@ -1,180 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trips - Rapid Rush Adventures</title>
-    <meta name="description" content="Explore our exciting rafting trips at Rapid Rush Adventures. From beginner-friendly adventures to challenging expeditions, find the perfect rafting experience for you.">
+    <meta name="description" content="Akwero Sophia WDD130 Trips Page">
     <meta name="author" content="Akwero Sophia">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rafting Trips - White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <img src="/wwr/images/jpg" alt="Rapid Rush Adventures Logo">
+    <header class="header">
+        <img src="/wwr/images/raftinglogo.jpg" alt="Rafting site logo">
         <nav>
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.html">About</a>
             <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-
     <main>
-        <!-- Hero Section -->
-        <section class="hero1">
-        <section class="hero4">
-            <!-- <img src="images/trips-hero.webp" alt="Trips"> -->
-            <div class="hero-content">
-                <h1>Our Rafting Adventures</h1>
-                <p>Choose your perfect rafting experience</p>
-                <button onclick="location.href='contact.html'" class="button">Book Your Adventure</button>
+        <section class="cta-section">
+            <h2>Plan Your Adventure Today!</h2>
+            <p>Ready for an exciting rafting experience? <a href="/contact.html" class="button">Contact us</a> now!</a></p>
+        </section>
+        <section class="trip">
+            <div class="trip-info">
+                <h2>Trip 1: River Adventure</h2>
+                <p>Experience the thrill of navigating through challenging rapids and enjoying the scenic beauty of nature. Our River Adventure trip is perfect for adrenaline seekers!</p>
+            </div>
+            <div class="trip-image">
+                <img src="images/river_adventure.jpg" alt="River Adventure">
             </div>
         </section>
 
-        <!-- Featured Trips -->
-        <section class="featured-trips">
-            <h2>Featured Adventures</h2>
-            <div class="trip-cards">
-                <div class="trip-card">
-                    <img src="images/Beginne-Rapids.jpeg" alt="Beginner Rapids">
-                    <div class="trip-content">
-                        <h3>Beginner's Paradise</h3>
-                        <p class="difficulty">Difficulty: Easy ★☆☆</p>
-                        <p>Perfect for first-timers! Experience gentle rapids and beautiful scenery on this 3-hour adventure.</p>
-                        <ul class="trip-details">
-                            <li>Duration: 3 hours</li>
-                            <li>Price: $79/person</li>
-                            <li>Min Age: 8 years</li>
-                        </ul>
-                        <button onclick="location.href='contact.html'" class="button">Book Now</button>
-                    </div>
-                </div>
-
-                <div class="trip-card">
-                    <img src="images/Intermediate-Rapids.jpeg" alt="Intermediate Rapids">
-                    <div class="trip-content">
-                        <h3>Adventure Seeker</h3>
-                        <p class="difficulty">Difficulty: Moderate ★★☆</p>
-                        <p>Challenge yourself with Class III rapids on this exciting full-day journey.</p>
-                        <ul class="trip-details">
-                            <li>Duration: 6 hours</li>
-                            <li>Price: $129/person</li>
-                            <li>Min Age: 12 years</li>
-                        </ul>
-                        <button onclick="location.href='contact.html'" class="button">Book Now</button>
-                    </div>
-                </div>
-
-                <div class="trip-card">
-                    <img src="images/Expert-Rapids.jpeg" alt="Expert Rapids">
-                    <div class="trip-content">
-                        <h3>Expert's Challenge</h3>
-                        <p class="difficulty">Difficulty: Hard ★★★</p>
-                        <p>Conquer Class IV-V rapids in this adrenaline-pumping expedition.</p>
-                        <ul class="trip-details">
-                            <li>Duration: 8 hours</li>
-                            <li>Price: $199/person</li>
-                            <li>Min Age: 16 years</li>
-                        </ul>
-                        <button onclick="location.href='contact.html'" class="button">Book Now</button>
-                    </div>
-                </div>
+        <section class="trip">
+            <div class="trip-info">
+                <h2>Trip 2: Wilderness Expedition</h2>
+                <p>Embark on a journey deep into the heart of the Wilderness. Navigate through untouched waters, cam under the stars, and explre the unexplored. Wilderness Expedition is a true adventure's dream.</p>
+            </div>
+            <div class="trip-image">
+                <img src="images/wilderness_exepdition.jpg" alt="Wilderness Expedition">
             </div>
         </section>
 
-        <!-- Trip Schedule Table -->
-        <section class="trip-schedule">
-            <h2>2024 Trip Schedule</h2>
-            <div class="table-container">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Trip Name</th>
-                            <th>Dates Available</th>
-                            <th>Duration</th>
-                            <th>Difficulty</th>
-                            <th>Price</th>
-                            <th>Availability</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Beginner's Paradise</td>
-                            <td>Daily</td>
-                            <td>3 hours</td>
-                            <td>Easy</td>
-                            <td>$79</td>
-                            <td class="available">Available</td>
-                        </tr>
-                        <tr>
-                            <td>Adventure Seeker</td>
-                            <td>Wed, Sat, Sun</td>
-                            <td>6 hours</td>
-                            <td>Moderate</td>
-                            <td>$129</td>
-                            <td class="limited">Limited</td>
-                        </tr>
-                        <tr>
-                            <td>Expert's Challenge</td>
-                            <td>Sat Only</td>
-                            <td>8 hours</td>
-                            <td>Hard</td>
-                            <td>$199</td>
-                            <td class="booking-fast">Booking Fast</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <section class="trip">
+            <div class="trip-info">
+                <h2>Trip 3: Sunset Rafting</h2>
+                <p>Experience the thrill of rafting as the sun sets behind the mountains. An unforgattable adventure filled with adrenaline and breathtaking views. </p>
+            </div>
+            <div class="trip-image">
+                <img src="images/sunset_rafting.jpg" alt="Sunset Rafting">
             </div>
         </section>
-
-        <!-- Call to Action -->
-        <section class="trip-cta">
-            <div class="cta-content">
-                <h2>Ready for Your Adventure?</h2>
-                <p>Contact us now to book your perfect rafting experience!</p>
-                <button onclick="location.href='contact.html'" class="button">Get In Touch</button>
-            </div>
-        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Trip Name</th>
+                    <th>Duration</th>
+                    <th>Difficulty Level</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adventure Rapids</td>
+                    <td>2 days</td>
+                    <td>Intermediate</td>
+                    <td>$300</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Wilderness Expedition</td>
+                    <td>3 days</td>
+                    <td>Advance</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Sunset Rafting</td>
+                    <td>1 day</td>
+                    <td>Amateur</td>
+                    <td>$150</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
+    <footer class="footer">
+        <div class="social-icons">
+        <p>©2023⚓White Water Rafting⚓Femi</p>
+        <nav class="sociallinks">
+                <img src="/wwr/images/facebook.webp" alt="Facebook"> 
+            </a>
+                <img src="/wwr/images/twitter.webp" alt="Twitter">
+            </a>
+                <img src="/wwr/images/instagram.webp" alt="Instagram">
+            </a>
+        </nav>
+        <nav>
+            <a href="https://app.moqups.com/unsaved/4d673768/edit/page/ad64222d5" target="_blank">
+                <img src="images/moqups.jpeg" alt="wireframe">
+            </a>
 
-    <footer>
-        <div class="copyright">
-            <p>&copy; 2024 Rapid Rush Adventures. All rights reserved.</p>
+        </nav>
         </div>
-        <div class="sociallinks">
-            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-        </div>
-        <div class="wireframe-link">
-            <a href="images/rafting-wireframe.jpg" target="_blank">R-Wireframe</a>
-        </div>
-
-    </footer>
-
-    <!-- JavaScript for Sticky Navigation Bar -->
-    <script>
-        let lastScrollTop = 0;
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('header');
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                navbar.classList.add('scrolled');
-                navbar.classList.remove('visible');
-            } else {
-                navbar.classList.remove('scrolled');
-                navbar.classList.add('visible');
-            }
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        });
-    </script>
+    </footer>  
 </body>
 </html>
-
-
-
-
-
-~
