@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Rapid Rush Adventures Logo">
+        <img src="images/raftinglogo.jpg" alt=" rafting Logo">
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -46,12 +46,12 @@
         <!-- CSS Grid Layout -->
         <section class="grid-layout">
             <div class="grid-item">
-                <img src="images/rafting-purpose.jpg" alt="Rafting Adventure 1">
+                <img src="images/Adventuregroup rafting.jpg" alt=" Adventure group rafting 1">
                 <h3>Our Purpose</h3>
                 <p>At Rapid Rush Adventures, we're dedicated to providing thrilling and safe whitewater rafting experiences for adventure seekers of all levels.</p>
             </div>
             <div class="grid-item">
-                <img src="images/rafting-offerings.jpg" alt="Rafting Adventure 2">
+                <img src="images/Adventureenthusiastsrafting.jpg" alt="Adventure enthusiasts rafting 2">
                 <h3>Our Offerings</h3>
                 <p>We offer a variety of rafting trips, from beginner-friendly excursions to challenging adventures for experienced rafters.</p>
             </div>
@@ -70,28 +70,6 @@
                 <h3>Current Subscribers: <span id="subscriber-count">0</span></h3>
             </div>
         </section>
-        
-        <!-- Testimonial Carousel -->
-        <section class="testimonial-carousel">
-            <h2>What Our Adventurers Say</h2>
-            <div class="testimonial-slide">
-                <img src="images/user11.jpg" alt="User Photo">
-                <p>"What a rush. 🌊 Our family had a blast paddling through the rapids. Can't wait for our next adventure! 🛶💦"<br> - Kambabazi Brendar</p>
-            </div>
-            <div class="testimonial-slide">
-                <img src="images/user22.webp" alt="User Photo">
-                <p>"Best adventure ever!Absolutely exhilarating. 🤩 The guides were amazing, and the scenery was breathtaking. A must-do for thrill-seekers 🌲🌞" <br>- Sseguya Partrick</p>
-            </div>
-            <div class="testimonial-slide">
-                <img src="images/user33.jpg" alt="User Photo">
-                <p>"Amazing rafting experience. Best day ever. 🎉 We laughed, splashed, and conquered every wave. Already planning round two 💪💧"<br> - Olive Nat Mayars</p>
-            </div>
-            <div class="testimonial-slide">
-                <img src="images/user44.jpg" alt="User Photo">
-                <p>"Best adventure ever!Rafting with these pros was a total game-changer 🥳 From start to finish, it was non-stop fun. Highly recommen 🙌🏞️"<br> - Nicole Nasuna</p>
-            </div>
-        </section>
-        
     </main>
     
     <footer>
@@ -99,68 +77,10 @@
             <p>&copy; 2023 Rapid Rush Adventures. All rights reserved.</p>
         </div>
         <div class="sociallinks">
-            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.webp" alt="Instagram"></a>
         </div>
     </footer>
     
-    <!-- JavaScript for Sticky Navigation Bar -->
-    <script>
-        let lastScrollTop = 0;
-        window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('header');
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                // Downscroll
-                navbar.classList.add('scrolled');
-                navbar.classList.remove('visible');
-            } else {
-                // Upscroll
-                navbar.classList.remove('scrolled');
-                navbar.classList.add('visible');
-            }
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-        });
-    </script>
     
-    <!-- JavaScript for Testimonial Carousel -->
-    <script>
-        let index = 0;
-        const slides = document.querySelectorAll('.testimonial-slide');
-        const totalSlides = slides.length;
-    
-        function showSlide() {
-            slides.forEach((slide, i) => {
-                slide.style.transform = `translate(-50%, -25%) translateX(${(i - index) * 100}%)`;
-            });
-        }
-    
-        function nextSlide() {
-            index = (index + 1) % totalSlides;
-            showSlide();
-        }
-    
-        showSlide();
-        setInterval(nextSlide, 4000); // Change slide every 4 seconds
-    </script>
-    
-    <!-- JavaScript for Real-Time Updates for Subscribers -->
-    <script>
-        let subscriberCount = 35; // Start with a default value
-        const subscriberElement = document.getElementById('subscriber-count');
-
-        function updateSubscriberCount(newCount) {
-            subscriberCount = newCount;
-            subscriberElement.textContent = subscriberCount;
-        }
-
-        // Simulate real-time updates
-        setInterval(() => {
-            subscriberCount += Math.floor(Math.random() * 5); // Increment by a random number
-            updateSubscriberCount(subscriberCount);
-        }, 900); // Update every 5 seconds
-    </script>
-</body>
-</html>
