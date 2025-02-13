@@ -17,15 +17,15 @@ body {
     padding: 20px;
     margin: 0 auto;
     justify-content: center;
-    background-color: #f0f0f0; /* Lightened background to improve overall contrast */
+    background-color: #f0f0f0;
     position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color); /* Darker text for better contrast */
+    color: var(--primary-color);
     text-align: center;
-} 
+}
 
 p {
     font-size: 18px;
@@ -63,71 +63,71 @@ nav {
     font-size: 1.2rem;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    margin: 0 6px;
+}
+
 nav a {
     display: block;
-    color: rgb(2, 2, 49); /* Unchanged */
+    color: rgb(2, 2, 49);
     text-decoration: none;
     padding: 1rem;
     border: 2px solid var(--primary-color);
     border-radius: 10px;
-    margin: 0 6px;
 }
 
 nav a:link, nav a:visited {
-    color: var(--nav-link-color); /* Unchanged */
+    color: var(--nav-link-color);
 }
 
 nav a:hover {
-    color: var(--nav-hover-link-color); /* Unchanged */
-    background-color: var(--nav-hover-background-color); /* Darker hover color */
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 6px 0;
+    }
+}
+
+.hero1, .hero4, .hero {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #90e0ef;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 400px;
+    background-attachment: fixed;
 }
 
 .hero1 {
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #90e0ef;
-    background-image: url(../images/hero-image.png); /* Image for .hero for the about page.*/
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    min-height: 400px;
-    background-attachment: fixed;
+    background-image: url(../images/hero-image.png);
 }
 
 .hero4 {
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #90e0ef;
-    background-image: url(../images/trips-hero.webp); /* Different image for .hero1 for the trips page*/
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    min-height: 400px;
-    background-attachment: fixed;
+    background-image: url(../images/trips-hero.webp);
 }
 
 .hero {
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #90e0ef;
-    background-image: url(../images/rafting-home.jpg); /* Different image for .hero2 for the home page*/
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    min-height: 400px;
-    background-attachment: fixed;
+    background-image: url(../images/rafting-home.jpg);
 }
 
 .hero img,
@@ -149,17 +149,17 @@ nav a:hover {
     margin: 10px;
     border-radius: 5px;
     font-size: 40px;
-    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
+    background-color: rgba(72, 202, 228, 0.8);
     white-space: nowrap;
 }
 
 .hero article,
-.hero1 article{
+.hero1 article {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
+    background-color: rgba(72, 202, 228, 0.8);
     padding: 20px;
     max-width: 60%;
     height: 200px;
@@ -173,7 +173,7 @@ nav a:hover {
 }
 
 .hero article img,
-.hero1 article img{
+.hero1 article img {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -185,13 +185,11 @@ nav a:hover {
     z-index: 1;
 }
 
-.hero article p, 
-.hero1 article p{
+.hero article p,
+.hero1 article p {
     margin-right: 140px;
     z-index: 0;
 }
-
-
 
 main {
     padding: 20px;
@@ -305,7 +303,7 @@ footer .copyright {
     flex-grow: 1;
     text-align: center;
     font-size: 1rem;
-    color: var(--primary-color); /* Darker text for better contrast */
+    color: var(--primary-color);
 }
 
 footer .sociallinks {
@@ -324,7 +322,6 @@ footer .sociallinks img,
     height: 30px;
     transition: transform 0.3s;
 }
-
 
 footer .sociallinks img:hover {
     transform: scale(1.2);
@@ -436,7 +433,6 @@ footer .sociallinks img:hover {
     animation: float-btn 3s ease-in-out infinite;
 }
 
-
 .newsletter-signup {
     background-color: var(--accent2-color);
     padding: 40px;
@@ -466,7 +462,7 @@ footer .sociallinks img:hover {
 }
 
 .button {
-    background-color: rgb(5, 5, 66);;
+    background-color: rgb(5, 5, 66);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -586,7 +582,7 @@ footer .sociallinks img:hover {
 }
 
 .hero-content {
-    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
+    background-color: rgba(72, 202, 228, 0.8);
     padding: 40px;
     text-align: center;
     border-radius: 10px;
@@ -614,7 +610,6 @@ footer .sociallinks img:hover {
     transform: scale(1.05);
 }
 
-/* Trips Page Specific Styles */
 .featured-trips {
     padding: 40px 0;
 }
@@ -691,18 +686,18 @@ th, td {
 }
 
 th {
-    background-color: #023e8a; /* Kept primary color but ensuring it's the darker shade */
-    color: #ffffff; /* Pure white for maximum contrast */
+    background-color: #023e8a;
+    color: #ffffff;
 }
 
 tr:hover {
-    background-color: #1aaf968f; /* Darker hover background for better contrast */
+    background-color: #1aaf968f;
 }
 
 .limited,
 .booking-fast,
-.available  {
-    color: #023834; /* Darker red for better contrast */
+.available {
+    color: #023834;
 }
 
 .trip-cta {
