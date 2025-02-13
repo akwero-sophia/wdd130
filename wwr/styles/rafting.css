@@ -332,13 +332,21 @@ footer .sociallinks img:hover {
 }
 
 .contact-info iframe {
-        width: 50%; /* Adjust this value to make the iframe narrower */
-        height: 300px; /* Adjust this value to control the height */
+    .contact-info iframe {
+        width: 100%; /* Full width on smaller screens */
+        height: 300px;
         border: 0;
         margin-top: 20px;
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    @media (min-width: 768px) {
+        .contact-info iframe {
+            width: 50%; /* Narrower on larger screens */
+        }
+    }
     }
 
 .team {
