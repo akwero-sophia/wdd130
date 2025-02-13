@@ -333,7 +333,7 @@ footer .sociallinks img:hover {
 
 .contact-info iframe {
         width: 100%; /* Adjust this value to control the width */
-        height: 300px; /* Adjust this value to control the height */
+        height: 200px; /* Adjust this value to control the height */
         border: 0;
         margin-top: 20px;
         display: block; /* Ensures the iframe is treated as a block element */
